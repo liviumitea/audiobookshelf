@@ -24,6 +24,10 @@ spec:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   storageClassName: longhorn
+  csi:
+    driver: driver.longhorn.io
+    fsType: ext4
+    volumeHandle: audibookshelf-metadata-pv
 
 ---
 apiVersion: v1
@@ -38,4 +42,8 @@ spec:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   storageClassName: longhorn
+  csi:
+    driver: driver.longhorn.io
+    fsType: ext4
+    volumeHandle: audibookshelf-config-pv
 
