@@ -30,7 +30,7 @@ spec:
       volumes:
       - name: audiobooks-volume
         hostPath:
-          path: /test
+          path: /data-nfs/audibookshelf/books
           type: Directory
       - name: metadata-volume
         persistentVolumeClaim:
