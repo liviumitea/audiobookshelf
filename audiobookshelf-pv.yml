@@ -32,7 +32,7 @@ metadata:
   name: audibookshelf-config-pv
 spec:
   capacity:
-    storage: 500Mb
+    storage: 500Mi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce

@@ -22,5 +22,5 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 500Mb
+      storage: 500Mi
   volumeName: "audibookshelf-config-pv"
