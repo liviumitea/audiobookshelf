@@ -29,8 +29,9 @@ spec:
           mountPath: /config
       volumes:
       - name: audiobooks-volume
-        path: /data-nfs/audibookshelf/books
-        type: Directory
+        hostPath:
+          path: /data-nfs/audibookshelf/books
+          type: Directory
       - name: metadata-volume
         persistentVolumeClaim:
           claimName: audibookshelf-metadata-pvc
